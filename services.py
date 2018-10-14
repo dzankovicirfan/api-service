@@ -3,10 +3,10 @@ from __future__ import unicode_literals
 
 import json
 import requests
+import config
+
 
 api_url = 'https://api-playground.revelup.com'
-API_key = '6c39370b27d0414ea095b47005b09309'
-API_secret = '4a1fb827c4954c8bb2b56d74cb085f8dfe4ea12a6cf24297824c68f3d0d843bc'
 
 
 class User(object):
@@ -24,7 +24,7 @@ class User(object):
 
 
 # initializing user
-user = User(API_key, API_secret)
+user = User(config.API_key, config.API_secret)
 
 
 # get menu
